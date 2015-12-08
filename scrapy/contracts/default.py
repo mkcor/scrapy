@@ -91,10 +91,11 @@ class ScrapesContract(Contract):
 
 class IgnoreContract(Contract):
     """
-    This contract allows to ignore some errors which might occurred
-    sometimes when a website is slow or temporarily unavailable. In a context of
-    continuous integration this contract prevents to break the build for external reasons.
-    This contract is optional and must be used with caution
+    This contract (``@ignore``) allows to ignore some errors which might occur
+    when a website is slow or temporarily unavailable. In a context of
+    continuous integration, this contract prevents the build from breaking for
+    external reasons. This contract is optional and should be used with
+    caution.
 
     @ignore TimeoutError
     """
